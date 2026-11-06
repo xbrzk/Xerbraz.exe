@@ -169,7 +169,7 @@ img { max-width: 100%; display: block; }
   overflow: hidden;
   background:
     linear-gradient(90deg, rgba(11, 16, 25, 0.94) 0%, rgba(11, 16, 25, 0.7) 40%, rgba(11, 16, 25, 0.1) 100%),
-    url('images/hero.png') center / cover no-repeat;
+    url('hero.png') center / cover no-repeat;
 }
 .hero__content {
   position: absolute;
@@ -196,7 +196,6 @@ img { max-width: 100%; display: block; }
   height: 340px;
   border-radius: var(--radius-lg);
   overflow: hidden;
-  display: none;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -814,7 +813,7 @@ img { max-width: 100%; display: block; }
     gap: 20px;
     background:
       linear-gradient(180deg, rgba(11, 16, 25, 0.1) 0%, rgba(11, 16, 25, 0.55) 50%, rgba(11, 16, 25, 1) 100%),
-      url('images/hero.png') center 40% / cover no-repeat;
+      url('hero.png') center 40% / cover no-repeat;
   }
   .hero__content { position: static; max-width: none; }
   .hero__visual { position: static; width: auto; height: 240px; }
