@@ -1,0 +1,417 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Xerbraz.exe — Rumah impian, siap ditinggali</title>
+  <meta name="description" content="Cluster asri dengan akses tol, sekolah, dan fasilitas lengkap. Pilihan tipe 36 sampai 90.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Cormorant+Garamond:wght@500;600&display=swap">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container">
+
+  <header class="site-header">
+    <a href="#beranda" class="brand"><img src="images/logo.png" alt="" class="brand__logo"><span>Xerbraz.exe</span></a>
+    <nav class="nav" aria-label="Utama">
+      <a href="#beranda" class="is-active" data-i18n="nav_home">Beranda</a>
+      <a href="#unit" data-i18n="nav_units">Unit</a>
+      <a href="#kpr" data-i18n="nav_kpr">Simulasi KPR</a>
+      <a href="#lokasi" data-i18n="nav_location">Lokasi</a>
+      <a href="#kontak" data-i18n="nav_contact">Kontak</a>
+    </nav>
+    <div class="header-actions">
+      <div class="lang" role="group" aria-label="Bahasa / Language">
+        <button type="button" class="lang__opt" data-lang="id" aria-pressed="true">ID</button>
+        <button type="button" class="lang__opt" data-lang="en" aria-pressed="false">EN</button>
+      </div>
+      <button type="button" class="menu-btn" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+      <a href="#kontak" class="btn btn--header" data-i18n="cta_visit">Jadwalkan Kunjungan</a>
+    </div>
+  </header>
+
+  <!-- Tombol kunjungan untuk mobile (tidak ikut sticky) -->
+  <div class="mobile-cta">
+    <a href="#kontak" class="btn" data-i18n="cta_visit">Jadwalkan Kunjungan</a>
+  </div>
+
+  <!-- Hero -->
+  <section class="hero" id="beranda">
+    <div class="hero__content">
+      <p class="eyebrow" data-i18n="hero_eyebrow">Hunian keluarga di Jambi</p>
+      <h1 class="display hero__title" data-i18n-html="hero_title">Rumah impian,<br>siap ditinggali</h1>
+      <p class="hero__text" data-i18n="hero_text">Cluster asri dengan akses tol, sekolah, dan fasilitas lengkap. Pilihan tipe 36 sampai 90 dengan cicilan ringan.</p>
+      <div class="hero__chips">
+        <span class="chip">Cluster Cozy Den</span>
+        <span class="chip">Cluster Artist House</span>
+        <span class="chip">Cluster Silent Dream</span>
+      </div>
+    </div>
+
+    <div class="hero__visual" role="img" aria-label="Area perumahan"></div>
+
+    <form class="search" role="search" onsubmit="return false;">
+      <label class="search__field">
+        <div class="search__label" data-i18n="s_price">Harga</div>
+        <span data-i18n="s_price_val">Rp 300 jt – 1 M</span>
+      </label>
+      <label class="search__field">
+        <div class="search__label" data-i18n="s_land">Luas tanah</div>
+        60 m² – 120 m²
+      </label>
+      <label class="search__field">
+        <div class="search__label" data-i18n="s_type">Tipe rumah</div>
+        <span data-i18n="s_type_val">Semua tipe</span>
+      </label>
+      <label class="search__field">
+        <div class="search__label" data-i18n="s_loc">Lokasi</div>
+        <span data-i18n="s_loc_val">Semua cluster</span>
+      </label>
+      <button type="submit" class="btn" data-i18n="s_btn">Cari unit</button>
+    </form>
+  </section>
+
+  <!-- Statistik -->
+  <section class="stats" aria-label="Ringkasan">
+    <div class="card stat">
+      <div class="stat__value">120+</div>
+      <div class="stat__label" data-i18n="st1">Unit terjual</div>
+    </div>
+    <div class="card stat">
+      <div class="stat__value">15</div>
+      <div class="stat__label" data-i18n="st2">Unit tersedia</div>
+    </div>
+    <div class="card stat">
+      <div class="stat__value" data-i18n="st3_v">5 mnt</div>
+      <div class="stat__label" data-i18n="st3">Ke pintu tol terdekat</div>
+    </div>
+    <div class="card stat">
+      <div class="stat__value" data-i18n="st4_v">24 jam</div>
+      <div class="stat__label" data-i18n="st4">Keamanan terpadu</div>
+    </div>
+  </section>
+
+  <!-- Unit -->
+  <section class="section" id="unit">
+    <div class="section__head">
+      <div>
+        <p class="eyebrow" data-i18n="unit_eyebrow">Pilihan unit</p>
+        <h2 class="display section__title" data-i18n="unit_title">Tipe yang tersedia</h2>
+      </div>
+      <a href="#unit" class="link-gold" data-i18n="unit_all">Lihat semua unit →</a>
+    </div>
+
+    <div class="units">
+      <article class="card unit">
+        <div class="unit__image" style="background:#24324A"></div>
+        <div class="unit__body">
+          <h3 class="unit__name">Tipe 36/72</h3>
+          <p class="unit__spec" data-i18n="u1_spec">2 KT · 1 KM · Carport</p>
+          <div class="unit__foot">
+            <span class="unit__price" data-i18n="u1_price">Rp 425 jt</span>
+            <a href="#kontak" class="btn btn--ghost" data-i18n="u_detail">Detail</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="card unit">
+        <div class="unit__image" style="background:#2E3B52"></div>
+        <div class="unit__body">
+          <h3 class="unit__name">Tipe 45/90</h3>
+          <p class="unit__spec" data-i18n="u2_spec">3 KT · 2 KM · Taman belakang</p>
+          <div class="unit__foot">
+            <span class="unit__price" data-i18n="u2_price">Rp 580 jt</span>
+            <a href="#kontak" class="btn btn--ghost" data-i18n="u_detail">Detail</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="card unit">
+        <div class="unit__image" style="background:#1F2B40"></div>
+        <div class="unit__body">
+          <h3 class="unit__name">Tipe 60/120</h3>
+          <p class="unit__spec" data-i18n="u3_spec">4 KT · 3 KM · Hook ke cluster</p>
+          <div class="unit__foot">
+            <span class="unit__price" data-i18n="u3_price">Rp 890 jt</span>
+            <a href="#kontak" class="btn btn--ghost" data-i18n="u_detail">Detail</a>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- KPR -->
+  <section class="two-col">
+    <div class="card panel" id="kpr">
+      <p class="eyebrow" data-i18n="kpr_eyebrow">Simulasi KPR</p>
+      <h3 class="display panel__title" data-i18n="kpr_title">Estimasi cicilan bulanan</h3>
+      <div class="kpr__row">
+        <div class="subtle" style="font-size:12px" data-i18n="kpr_label">Cicilan per bulan (20 tahun, bunga contoh 8%)</div>
+        <div class="kpr__amount" data-i18n="kpr_amount">Rp 4,2 jt</div>
+      </div>
+      <div class="bar"><div class="bar__fill"></div></div>
+      <p class="note" data-i18n="kpr_note">Angka ini hanya contoh. Hasil akhir mengikuti kebijakan bank.</p>
+    </div>
+  </section>
+
+  <!-- Lokasi -->
+  <section class="section location" id="lokasi">
+    <div class="section__head">
+      <div>
+        <p class="eyebrow" data-i18n="loc_eyebrow">Lokasi</p>
+        <h2 class="display section__title" data-i18n="loc_title">Dekat dengan semua yang penting</h2>
+      </div>
+      <a href="https://www.google.com/maps?q=-1.643312,103.627375" target="_blank" rel="noopener" class="btn" data-i18n="loc_link">Buka di Google Maps →</a>
+    </div>
+
+    <div class="location__grid">
+      <div class="card map map--embed">
+        <a href="https://www.google.com/maps?q=-1.643312,103.627375" target="_blank" rel="noopener" class="map__open" data-i18n="loc_link">Buka di Google Maps →</a>
+        <iframe
+          src="https://www.google.com/maps?q=-1.643312,103.627375&z=15&output=embed"
+          style="border:0"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          title="Lokasi perumahan"></iframe>
+      </div>
+
+      <div class="card places">
+        <p class="places__title" data-i18n="pl_title">Alamat</p>
+        <p class="places__address" data-i18n="pl_address">[Jalan, Kelurahan, Kecamatan, Kota]</p>
+        <ul class="places__list">
+          <li><span data-i18n="pl1">Pintu tol terdekat</span><span data-i18n="pl1_v">5 menit</span></li>
+          <li><span data-i18n="pl2">Sekolah</span><span data-i18n="pl2_v">3 menit</span></li>
+          <li><span data-i18n="pl3">Rumah sakit</span><span data-i18n="pl3_v">10 menit</span></li>
+          <li><span data-i18n="pl4">Pasar / pusat belanja</span><span data-i18n="pl4_v">8 menit</span></li>
+          <li><span data-i18n="pl5">Masjid</span><span data-i18n="pl5_v">2 menit</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta" id="kontak">
+    <div>
+      <h3 class="display cta__title" data-i18n="cta_title">Mau lihat langsung?</h3>
+      <p class="cta__text" data-i18n="cta_text">Jadwalkan kunjungan dan tim kami akan menemani Anda.</p>
+    </div>
+    <a href="mailto:info@perumahan.com" class="btn" data-i18n="cta_btn">Jadwalkan kunjungan</a>
+  </section>
+
+  <footer class="site-footer">
+    <span>© 2026 Xerbraz</span>
+    <span data-i18n="footer_r">Alamat · Telepon · Email</span>
+  </footer>
+
+</div>
+
+<script>
+(function () {
+  var T = {
+    nav_home:     ['Beranda', 'Home'],
+    nav_units:    ['Unit', 'Units'],
+    nav_location: ['Lokasi', 'Location'],
+    nav_kpr:      ['Simulasi KPR', 'Mortgage simulation'],
+    nav_contact:  ['Kontak', 'Contact'],
+    cta_visit:    ['Jadwalkan Kunjungan', 'Book a visit'],
+    hero_eyebrow: ['Hunian keluarga di Jambi', 'Family housing in Jambi'],
+    hero_title:   ['Rumah impian,<br>siap ditinggali', 'Your dream home,<br>ready to live in'],
+    hero_text:    ['Cluster asri dengan akses tol, sekolah, dan fasilitas lengkap. Pilihan tipe 36 sampai 90 dengan cicilan ringan.', 'Green clusters with toll access, schools, and complete facilities. Types 36 to 90 with easy installments.'],
+    s_price:      ['Harga', 'Price'],
+    s_price_val:  ['Rp 300 jt – 1 M', 'IDR 300 M – 1 B'],
+    s_land:       ['Luas tanah', 'Land size'],
+    s_type:       ['Tipe rumah', 'House type'],
+    s_type_val:   ['Semua tipe', 'All types'],
+    s_loc:        ['Lokasi', 'Location'],
+    s_loc_val:    ['Semua cluster', 'All clusters'],
+    s_btn:        ['Cari unit', 'Search units'],
+    st1:          ['Unit terjual', 'Units sold'],
+    st2:          ['Unit tersedia', 'Units available'],
+    st3_v:        ['5 mnt', '5 min'],
+    st3:          ['Ke pintu tol terdekat', 'To the nearest toll gate'],
+    st4_v:        ['24 jam', '24 h'],
+    st4:          ['Keamanan terpadu', 'Integrated security'],
+    unit_eyebrow: ['Pilihan unit', 'Unit options'],
+    unit_title:   ['Tipe yang tersedia', 'Available types'],
+    unit_all:     ['Lihat semua unit →', 'View all units →'],
+    u1_spec:      ['2 KT · 1 KM · Carport', '2 BR · 1 BA · Carport'],
+    u2_spec:      ['3 KT · 2 KM · Taman belakang', '3 BR · 2 BA · Back garden'],
+    u3_spec:      ['4 KT · 3 KM · Hook ke cluster', '4 BR · 3 BA · Corner unit'],
+    u1_price:     ['Rp 425 jt', 'IDR 425 M'],
+    u2_price:     ['Rp 580 jt', 'IDR 580 M'],
+    u3_price:     ['Rp 890 jt', 'IDR 890 M'],
+    u_detail:     ['Detail', 'Details'],
+    kpr_eyebrow:  ['Simulasi KPR', 'Mortgage simulation'],
+    kpr_title:    ['Estimasi cicilan bulanan', 'Estimated monthly installment'],
+    kpr_label:    ['Cicilan per bulan (20 tahun, bunga contoh 8%)', 'Monthly installment (20 years, sample rate 8%)'],
+    kpr_amount:   ['Rp 4,2 jt', 'IDR 4.2 M'],
+    kpr_note:     ['Angka ini hanya contoh. Hasil akhir mengikuti kebijakan bank.', 'Figures are examples only. Final results follow the bank\'s policy.'],
+    loc_eyebrow:  ['Lokasi', 'Location'],
+    loc_title:    ['Dekat dengan semua yang penting', 'Close to everything that matters'],
+    loc_link:     ['Buka di Google Maps →', 'Open in Google Maps →'],
+    pl_title:     ['Alamat', 'Address'],
+    pl_address:   ['[Jalan, Kelurahan, Kecamatan, Kota]', '[Street, Village, District, City]'],
+    pl1:          ['Pintu tol terdekat', 'Nearest toll gate'],
+    pl1_v:        ['5 menit', '5 min'],
+    pl2:          ['Sekolah', 'School'],
+    pl2_v:        ['3 menit', '3 min'],
+    pl3:          ['Rumah sakit', 'Hospital'],
+    pl3_v:        ['10 menit', '10 min'],
+    pl4:          ['Pasar / pusat belanja', 'Market / shopping center'],
+    pl4_v:        ['8 menit', '8 min'],
+    pl5:          ['Masjid', 'Mosque'],
+    pl5_v:        ['2 menit', '2 min'],
+    cta_title:    ['Mau lihat langsung?', 'Want to see it in person?'],
+    cta_text:     ['Jadwalkan kunjungan dan tim kami akan menemani Anda.', 'Book a visit and our team will accompany you.'],
+    cta_btn:      ['Jadwalkan kunjungan', 'Book a visit'],
+    footer_r:     ['Alamat · Telepon · Email', 'Address · Phone · Email']
+  };
+
+  var LANGS = { id: 0, en: 1 };
+  var current = 'id';
+  try {
+    var saved = localStorage.getItem('lang');
+    if (saved === 'en' || saved === 'id') current = saved;
+  } catch (e) {}
+
+  var opts = document.querySelectorAll('.lang__opt');
+
+  function apply(lang) {
+    var i = LANGS[lang];
+    document.documentElement.lang = lang === 'en' ? 'en' : 'id';
+    document.title = lang === 'en'
+      ? 'Xerbraz — Your dream home, ready to live in'
+      : 'Xerbraz — Rumah impian, siap ditinggali';
+
+    document.querySelectorAll('[data-i18n]').forEach(function (el) {
+      var key = el.getAttribute('data-i18n');
+      if (T[key]) el.textContent = T[key][i];
+    });
+    document.querySelectorAll('[data-i18n-html]').forEach(function (el) {
+      var key = el.getAttribute('data-i18n-html');
+      if (T[key]) el.innerHTML = T[key][i];
+    });
+
+    opts.forEach(function (o) {
+      var on = o.getAttribute('data-lang') === lang;
+      o.classList.toggle('is-active', on);
+      o.setAttribute('aria-pressed', on ? 'true' : 'false');
+    });
+    current = lang;
+    try { localStorage.setItem('lang', lang); } catch (e) {}
+    var active = document.querySelector('.nav a.is-active');
+    if (window.__movePill && active) window.__movePill(active);
+  }
+
+  opts.forEach(function (o) {
+    o.addEventListener('click', function () {
+      apply(o.getAttribute('data-lang'));
+    });
+  });
+
+  apply(current);
+})();
+</script>
+
+<script>
+(function () {
+  var nav = document.querySelector('.nav');
+  var links = Array.prototype.slice.call(nav.querySelectorAll('a[href^="#"]'));
+  var pill = document.createElement('span');
+  pill.className = 'nav__pill';
+  nav.insertBefore(pill, nav.firstChild);
+
+  function movePill(link) {
+    if (!link) { pill.style.opacity = '0'; return; }
+    pill.style.width = link.offsetWidth + 'px';
+    pill.style.transform = 'translateX(' + link.offsetLeft + 'px)';
+    pill.style.opacity = '1';
+  }
+  window.__movePill = movePill;
+
+  function setActive(link) {
+    links.forEach(function (a) { a.classList.toggle('is-active', a === link); });
+    movePill(link);
+  }
+
+  links.forEach(function (a) {
+    a.addEventListener('click', function () { setActive(a); });
+  });
+
+  var pairs = links.map(function (a) {
+    return { link: a, section: document.querySelector(a.getAttribute('href')) };
+  }).filter(function (p) { return p.section; });
+
+  if ('IntersectionObserver' in window) {
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) {
+        if (!e.isIntersecting) return;
+        var hit = pairs.find(function (p) { return p.section === e.target; });
+        if (hit) setActive(hit.link);
+      });
+    }, { rootMargin: '-40% 0px -55% 0px' });
+    pairs.forEach(function (p) { io.observe(p.section); });
+  }
+
+  window.addEventListener('resize', function () {
+    movePill(nav.querySelector('.is-active'));
+  });
+  setActive(nav.querySelector('.is-active'));
+
+  // Tombol menu garis tiga (mobile)
+  var header = document.querySelector('.site-header');
+  var menuBtn = document.querySelector('.menu-btn');
+  menuBtn.addEventListener('click', function () {
+    var open = header.classList.toggle('menu-open');
+    menuBtn.setAttribute('aria-expanded', open ? 'true' : 'false');
+  });
+  links.forEach(function (a) {
+    a.addEventListener('click', function () {
+      header.classList.remove('menu-open');
+      menuBtn.setAttribute('aria-expanded', 'false');
+    });
+  });
+})();
+</script>
+<script>
+(function () {
+  // Kartu unit: nyala saat diklik (satu kartu aktif)
+  var units = document.querySelectorAll('.unit');
+  units.forEach(function (u) {
+    u.addEventListener('click', function () {
+      var on = u.classList.contains('is-glow');
+      units.forEach(function (x) { x.classList.remove('is-glow'); });
+      if (!on) u.classList.add('is-glow');
+    });
+  });
+
+  // Kartu alamat: klik untuk menyalakan kartu peta dan kartu alamat bersama
+  var places = document.querySelector('.places');
+  var map = document.querySelector('.map--embed');
+  // Kartu alamat dan peta: masing-masing menyala sendiri-sendiri
+  if (places) {
+    places.addEventListener('click', function () {
+      places.classList.toggle('is-glow');
+    });
+  }
+  if (map) {
+    map.addEventListener('click', function (e) {
+      if (e.target.closest('.map__open')) return;
+      map.classList.toggle('is-glow');
+    });
+  }
+  // Efek klik pada semua tombol
+  document.querySelectorAll('.btn, .btn--ghost').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      btn.classList.remove('pulse');
+      void btn.offsetWidth;
+      btn.classList.add('pulse');
+      setTimeout(function () { btn.classList.remove('pulse'); }, 900);
+    });
+  });
+})();
+</script>
+</body>
+</html>
